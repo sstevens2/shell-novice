@@ -840,17 +840,18 @@ and we will see it in many other tools as we go on.
 > {: .solution}
 {: .challenge}
 
-> ## Listing Recursively and By Time
+> ## Listing in Reverse and By Time
 >
-> The command `ls -R` lists the contents of directories recursively, i.e., lists
-> their sub-directories, sub-sub-directories, and so on in alphabetical order
-> at each level. The command `ls -t` lists things by time of last change, with
-> most recently changed files or directories first.
-> In what order does `ls -R -t` display things? Hint: `ls -l` uses a long listing
-> format to view timestamps.
+> The command `ls -r` lists the contents of directories in reverse order.
+> By default the contents are listed in alphabetical order by name.
+> The command `ls -t` lists things by time of last change instead of
+> alphabetically. Which file is displayed last when you combine the `-t`
+> and `-r` flags? Hint: You may need to use the `-l` flag to see the 
+> last changed dates.
 >
 > > ## Solution
-> > The directories are listed alphabetical at each level, the files/directories
-> > in each directory are sorted by time of last change.
+> > The most recently changed file is listed last when using `-rt`. This
+> > can be very useful for finding your most recent edits or checking to
+> > see if a new output file was written.
 > {: .solution}
 {: .challenge}
