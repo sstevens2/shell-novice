@@ -573,27 +573,6 @@ backed up using enterprise OneDrive, see next point). Have them create
 the example directory for the shell exercises there so that they can
 find it easily and watch it evolve.</p>
 </li>
-<li>
-<p>If a Windows machine is backed up with enterprise OneDrive, their
-GUI desktop may be rendered from a folder within OneDrive, which will
-not match the contents of <code>~/Desktop</code>. The OneDrive desktop
-should be accessible using one of the following commands (if the name of
-the enterprise isn’t clear, look through the output of <code>ls</code>
-to find the right folder):</p>
-<div class="codewrapper sourceCode" id="cb3">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="ex">$</span> cd <span class="st">"~/OneDrive - Name Of Enterprise/Desktop"</span></span>
-<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="ex">$</span> cd <span class="st">"C:/Users/Username/OneDrive - Name Of Enterprise/Desktop"</span></span></code></pre>
-</div>
-<p>One way to spot if the computer is using this kind of configuration
-is to look at files, folders or links on the desktop. Usually the icon
-contains a shortcut/arrow symbol if it is a link, or just the plain icon
-if the file is just saved in the <code>Desktop</code> folder. Files
-synced with OneDrive contain an additional symbol indicating the sync
-status (typically blue arrows for ‘sync pending’ or a green tick for
-‘synced’).</p>
-</li>
 <li><p>Stay within POSIX-compliant commands, as all the teaching
 materials do. Your particular shell may have extensions beyond POSIX
 that are not available on other machines, especially the default macOS
@@ -647,6 +626,17 @@ Carpentry Windows Installer</a>.</p>
 be confusing. You may have both terminal and GUI file explorer open side
 by side so learners can see the content and file structure while they’re
 using terminal to navigate the system.</p>
+<hr>
+<br><h3 id="02-filedir-headingInstructor2">
+<a href="02-filedir.html#headingInstructor2">Instructor Note</a><a class="anchor" aria-label="anchor" href="#02-filedir-headingInstructor2"></a>
+</h3>
+<p>One way to spot if the computer is using this kind of configuration
+is to look at files, folders or links on the desktop. Usually the icon
+contains a shortcut/arrow symbol if it is a link, or just the plain icon
+if the file is just saved in the <code>Desktop</code> folder. Files
+synced with OneDrive contain an additional symbol indicating the sync
+status (typically blue arrows for ‘sync pending’ or a green tick for
+‘synced’).</p>
 <hr>
 <br></section><section id="03-create"><h2 class="section-heading"><a href="03-create.html">Working With Files and Directories</a></h2>
 <hr class="half-width">
@@ -712,8 +702,8 @@ workshops (in most cases Nano).</p>
   "url": "https://swcarpentry.github.io/shell-novice/instructor/instructor-notes.html",
   "identifier": "https://swcarpentry.github.io/shell-novice/instructor/instructor-notes.html",
   "dateCreated": "2014-10-22",
-  "dateModified": "2025-02-04",
-  "datePublished": "2025-02-04"
+  "dateModified": "2025-02-05",
+  "datePublished": "2025-02-05"
 }
 
   </script><script>
